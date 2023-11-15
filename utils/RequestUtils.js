@@ -10,7 +10,7 @@ class RequestUtils {
         this.fullNameFilter = "&filter=LoGHwYUQZ9y";
 	};
 
-    sendGetRequest = function( filter, exeFunc ) {
+    sendGetRequest = function( filter, idx, exeFunc ) {
         let url = this.URL_QUERY_TEIS + this.fullNameFilter + filter;
         console.log(url);
 
@@ -21,7 +21,7 @@ class RequestUtils {
         })
         .then(response => response.json())
         .then((result) => {
-            exeFunc({status: "success", data: result});
+            exeFunc({status: "success", data: result, filter, idx});
         }).catch((error) => {
             exeFunc({status: "error", data: error});
         });

@@ -25,15 +25,19 @@ const server = express()
 })
 .post("/search", (req, res) => {
 	
-	fs.readFile('list.json', 'utf8', (err, data) => {
-		if (err) {
-			console.error(err);
-			return;
-		}
+	// fs.readFile('list.json', 'utf8', (err, data) => {
+	// 	if (err) {
+	// 		console.error(err);
+	// 		return;
+	// 	}
 		
-		Utils.checkTEIs(JSON.parse(data), function(response){
-			res.send(response);
-		});
+	// 	Utils.checkTEIs(JSON.parse(data), function(response){
+	// 		res.send(response);
+	// 	});
+	// });
+
+	Utils.checkTEIs(function(response){
+		res.send(response);
 	});
 	
 })
