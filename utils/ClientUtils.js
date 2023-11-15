@@ -64,10 +64,13 @@ class ClientUtils {
         {
             for( var i=0; i<searchedList.length; i++)
             {
-                var item = searchedList[i];
-                var fullNameAttrVal = item.attributes.filter(function(attrVal) { return attrVal.attribute == me.fullNameAttributeId } );
-    
-                result.push( fullNameAttrVal[0].value + "(" + ( item.trackedEntityInstance ) + ")" );
+                try
+                {
+                    var item = searchedList[i];
+                    var fullNameAttrVal = item.attributes.find( attrVal => attrVal.attribute == me.fullNameAttributeId );
+                    if ( fullNameAttrVal ) result.push( fullNameAttrVal.value + "(" + ( item.trackedEntityInstance ) + ")" );    
+                }
+                catch ( errMsg ) { console.log( 'ERROR in searchedList, ' + errMsg ); }
             }
     
             if( prop == "Name") me.fullNameMatchNo++;
@@ -80,9 +83,20 @@ class ClientUtils {
 
     checkTeiByName = async function( item, nameProp )
     {
-        var filter = ":LIKE:" + item[ nameProp ];
-        var data = await RESTUtils.sendGetRequestAS( filter );
-        return data.trackedEntityInstances;
+        var result = [];
+
+        try
+        {
+            var filter = ":LIKE:" + item[ nameProp ];
+            var data = await RESTUtils.sendGetRequestAS( filter );
+            result = data.trackedEntityInstances;    
+        }
+        catch ( errMsg ) { 
+            item.error = "ERROR in searching name: " + item[ nameProp ] + ", item FullName: " + item.Name;
+            console.log( 'ERROR in checkTeiByName, ' + errMsg ); 
+        }
+
+        return result;
     }
 
 }
