@@ -40,11 +40,14 @@ class ClientUtils {
             var searchedFullNameList = await me.checkTeiByName( item, "Name" );
             item.result[ "Name" ] = me.resolveItem("Name", searchedFullNameList);
 
-            var searchedFirstNameList = await me.checkTeiByName( item, "First Name" );
-            item.result[ "First Name" ] = me.resolveItem("First Name", searchedFirstNameList);
-
-            var searchedLastNameList = await me.checkTeiByName( item, "Last Name" );
-            item.result[ "Last Name" ]  = me.resolveItem("Last Name", searchedLastNameList);
+            if ( item.result[ "Name" ].length == 0 )
+            {
+                var searchedFirstNameList = await me.checkTeiByName( item, "First Name" );
+                item.result[ "First Name" ] = me.resolveItem("First Name", searchedFirstNameList);
+    
+                var searchedLastNameList = await me.checkTeiByName( item, "Last Name" );
+                item.result[ "Last Name" ]  = me.resolveItem("Last Name", searchedLastNameList);    
+            }
         }
 
         itemList.push({ perfectMatch: me.fullNameMatchNo, firstNameMatch: me.firstNameMatchNo, lastNameMatch: me.lastNameMatchNo});
@@ -56,18 +59,21 @@ class ClientUtils {
     {
         var me = this;
         var result = [];
-        
-        for( var i=0; i<searchedList.length; i++)
+ 
+        if ( searchedList && searchedList.length > 0 )
         {
-            var item = searchedList[i];
-            var fullNameAttrVal = item.attributes.filter(function(attrVal) { return attrVal.attribute == me.fullNameAttributeId } );
-
-            result.push( fullNameAttrVal[0].value + "(" + ( item.trackedEntityInstance ) + ")" );
+            for( var i=0; i<searchedList.length; i++)
+            {
+                var item = searchedList[i];
+                var fullNameAttrVal = item.attributes.filter(function(attrVal) { return attrVal.attribute == me.fullNameAttributeId } );
+    
+                result.push( fullNameAttrVal[0].value + "(" + ( item.trackedEntityInstance ) + ")" );
+            }
+    
+            if( prop == "Name") me.fullNameMatchNo++;
+            else if( prop == "First Name") me.firstNameMatchNo++;
+            else if( prop == "Last Name") me.lastNameMatchNo++;   
         }
-
-        if( prop == "Name") me.fullNameMatchNo++;
-        else if( prop == "First Name") me.firstNameMatchNo++;
-        else if( prop == "Last Name") me.lastNameMatchNo++;
 
         return result;
     }
