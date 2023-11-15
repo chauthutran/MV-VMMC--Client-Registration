@@ -36,8 +36,13 @@ const server = express()
 	// 	});
 	// });
 
-	Utils.checkTEIs(function(response){
-		res.send(response);
+	//Utils.checkTEIs(function(response){
+	//	res.send(response);
+	//});
+
+
+	Utils.checkTEIs2( ).then( itemList => {
+		res.send( { itemList: itemList } );
 	});
 	
 })
