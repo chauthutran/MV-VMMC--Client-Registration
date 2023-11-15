@@ -1,0 +1,24 @@
+{
+  "name": "mv_vmmc_client_registration_service",
+  "version": "1.0.0",
+  "description": "MV VMMV  - Client Registration Service",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Tran Chau",
+  "license": "PSI",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.1",
+    "jsdom": "^20.0.0",
+    "node-fetch": "2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
