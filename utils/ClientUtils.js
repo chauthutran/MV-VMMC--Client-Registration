@@ -37,17 +37,21 @@ class ClientUtils {
             var item = itemList[i];
             item.result = {};
 
-            var searchedFullNameList = await me.checkTeiByName( item, "Name" );
-            item.result[ "Name" ] = me.resolveItem("Name", searchedFullNameList);
-
-            if ( item.result[ "Name" ].length == 0 )
+            try
             {
-                var searchedFirstNameList = await me.checkTeiByName( item, "First Name" );
-                item.result[ "First Name" ] = me.resolveItem("First Name", searchedFirstNameList);
+                var searchedFullNameList = await me.checkTeiByName( item, "Name" );
+                item.result[ "Name" ] = me.resolveItem("Name", searchedFullNameList);
     
-                var searchedLastNameList = await me.checkTeiByName( item, "Last Name" );
-                item.result[ "Last Name" ]  = me.resolveItem("Last Name", searchedLastNameList);    
+                if ( item.result[ "Name" ].length == 0 )
+                {
+                    var searchedFirstNameList = await me.checkTeiByName( item, "First Name" );
+                    item.result[ "First Name" ] = me.resolveItem("First Name", searchedFirstNameList);
+        
+                    var searchedLastNameList = await me.checkTeiByName( item, "Last Name" );
+                    item.result[ "Last Name" ]  = me.resolveItem("Last Name", searchedLastNameList);    
+                }
             }
+            catch ( errMsg ) { }
         }
 
         itemList.push({ perfectMatch: me.fullNameMatchNo, firstNameMatch: me.firstNameMatchNo, lastNameMatch: me.lastNameMatchNo});
