@@ -29,7 +29,7 @@ const server = express()
 
 	statusJson = {};
 
-	var inputData = listJson.slice(0, 1);
+	var inputData = listJson; // .slice(0, 1);
 
 	// console.log( JSON.stringify( inputData ) );
 
