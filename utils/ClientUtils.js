@@ -32,7 +32,8 @@ class ClientUtils {
 				var searchedFullNameList = await me.checkTeiByName(item, "Name");
 				item.result["Name"] = me.resolveItem("Name", searchedFullNameList);
 
-				if (item.result["Name"].length == 0) {
+				if (item.result["Name"].length == 0) 
+				{
 					var searchedFirstNameList = await me.checkTeiByName(item, "First Name");
 					item.result["First Name"] = me.resolveItem("First Name", searchedFirstNameList);
 
@@ -52,12 +53,18 @@ class ClientUtils {
 		var me = this;
 		var result = [];
 
-		if (searchedList && searchedList.length > 0) {
-			for (var i = 0; i < searchedList.length; i++) {
+		if (searchedList && searchedList.length > 0) 
+		{
+			for (var i = 0; i < searchedList.length; i++) 
+			{
 				try {
 					var item = searchedList[i];
+
 					var fullNameAttrVal = item.attributes.find(attrVal => attrVal.attribute == me.fullNameAttributeId);
-					if (fullNameAttrVal) result.push(fullNameAttrVal.value + "(" + (item.trackedEntityInstance) + ")");
+					
+					var strVal = fullNameAttrVal.value + ' [ UID: ' + item.trackedEntityInstance + ', Created: ' + item.created + ', LastUpdated: ' + item.lastUpdated + ']'
+
+					if (fullNameAttrVal) result.push( strVal );
 				}
 				catch (errMsg) { console.log('ERROR in searchedList, ' + errMsg); }
 			}

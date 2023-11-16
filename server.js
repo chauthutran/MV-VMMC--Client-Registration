@@ -27,22 +27,10 @@ const server = express()
 .get('/status', (req, res) => { res.send( { status: statusJson } ); })
 .post("/search", (req, res) => {
 
-	/*
-	fs.readFile('list.json', 'utf8', (err, data) => {
-		if (err) {
-			console.error(err);
-			res.send( { msg: 'Error on file read - ' + err } );
-			return;
-		}
-		else
-		{
-	*/
 	statusJson = {};
 
-	var inputData = [];
-	if ( listJson && listJson.length > 0 ) inputData.push( listJson[0] );
+	var inputData = listJson.slice(0, 3);
 
-	console.log( inputData );
 	console.log( JSON.stringify( inputData ) );
 
 	res.send( { msg: 'requestMade' } );
