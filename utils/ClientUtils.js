@@ -29,15 +29,15 @@ class ClientUtils {
 			item.result = {};
 
 			try {
-				var searchedFullNameList = await me.checkTeiByName(item, "Name");
+				var searchedFullNameList = await me.checkTeiByName(item, "Name", i + '_Name' );
 				item.result["Name"] = me.resolveItem("Name", searchedFullNameList);
 
 				if (item.result["Name"].length == 0) 
 				{
-					var searchedFirstNameList = await me.checkTeiByName(item, "First Name");
+					var searchedFirstNameList = await me.checkTeiByName(item, "First Name", i + '_FirstName');
 					item.result["First Name"] = me.resolveItem("First Name", searchedFirstNameList);
 
-					var searchedLastNameList = await me.checkTeiByName(item, "Last Name");
+					var searchedLastNameList = await me.checkTeiByName(item, "Last Name", i + '_LastName');
 					item.result["Last Name"] = me.resolveItem("Last Name", searchedLastNameList);
 				}
 			}
@@ -77,12 +77,12 @@ class ClientUtils {
 		return result;
 	}
 
-	checkTeiByName = async function (item, nameProp) {
+	checkTeiByName = async function (item, nameProp, progIdxName ) {
 		var result = [];
 
 		try {
 			var filter = ":LIKE:" + item[nameProp];
-			var data = await RESTUtils.sendGetRequestAS(filter);
+			var data = await RESTUtils.sendGetRequestAS(filter, progIdxName);
 			result = data.trackedEntityInstances;
 		}
 		catch (errMsg) {
