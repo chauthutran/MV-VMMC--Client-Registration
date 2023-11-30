@@ -1,0 +1,309 @@
+[
+  {
+    "_id": {"$oid": "65660e7b5dfe74088cdd073c"},
+    "endpoint": "R_LA.bot",
+    "payload": {
+      "activity": {"dateTime": "2023-11-28T15:59:55", "id": "92da88990856d049d20"},
+      "datavalues": [
+        {"name": "program", "value": "FPL-J30"},
+        {"name": "contactSource", "value": "FB-FP-UsalaBien"},
+        {"name": "contactSite", "value": "FB-FP-intern"},
+        {"name": "contactType", "value": "OUTR"},
+        {"name": "healthyBehaviorPromoted_j30", "value": "J-FPL"},
+        {"name": "facebookId", "value": "3402544903207924"},
+        {"name": "fullDetailsAvailable", "value": "YES"},
+        {"name": "lastName", "value": "Avila"},
+        {"name": "gender", "value": "F"},
+        {"name": "age", "value": 25},
+        {"name": "birthDate", "value": "1998-11-11"},
+        {"name": "citizen", "value": "YES"},
+        {"name": "birthDepartment", "value": "GUA"},
+        {"name": "generateVoucher", "value": "YES"},
+        {"name": "serviceDesired_fplcoun", "value": "YES"},
+        {"name": "serviceDesired_medcons", "value": "NO"},
+        {"name": "productDesired_oc", "value": "NO"},
+        {"name": "productDesired_ec", "value": "NO"},
+        {"name": "productDesired_inj", "value": "NO"},
+        {"name": "productDesired_con", "value": "NO"},
+        {"name": "phoneOwnership", "value": "NO"},
+        {"name": "phoneNumber", "value": "NO"},
+        {"name": "phoneContactConsent", "value": "YES"},
+        {"name": "phoneContactConsent_feedback", "value": "YES"},
+        {"name": "healthFacility", "value": "GT_PROV_0019"}
+      ],
+      "location": {"country": "GT", "latitude": "", "accuracy": 9000, "longitude": ""}
+    },
+    "header": {"authorization": "Basic Y2hhdGJvdGNob2NvbGF0ZTpOeGgkS1Y2U3FrNndR", "content-length": "1335", "host": "api.psi-connect.org", "connection": "upgrade", "content-type": "application/json", "accept-encoding": "gzip, deflate", "user-agent": "python-requests/2.22.0", "accept": "*/*"},
+    "time": {"start": "2023-11-28T15:59:55.834Z", "diff": 2526, "end": "2023-11-28T15:59:58.360Z"},
+    "params": {},
+    "processing": {
+      "dhis2In": {
+        "password": "4231",
+        "userName": "GT_BOT",
+        "actions": [
+          {
+            "dataValues": [
+              {"name": "program", "value": "FPL-J30"},
+              {"name": "contactSource", "value": "FB-FP-UsalaBien"},
+              {"name": "contactSite", "value": "FB-FP-intern"},
+              {"name": "contactType", "value": "OUTR"},
+              {"name": "healthyBehaviorPromoted_j30", "value": "J-FPL"},
+              {"name": "facebookId", "value": "3402544903207924"},
+              {"name": "fullDetailsAvailable", "value": "YES"},
+              {"name": "lastName", "value": "Avila"},
+              {"name": "gender", "value": "F"},
+              {"name": "age", "value": "25"},
+              {"name": "birthDate", "value": "1998-11-11"},
+              {"name": "citizen", "value": "YES"},
+              {"name": "birthDepartment", "value": "GUA"},
+              {"name": "generateVoucher", "value": "YES"},
+              {"name": "serviceDesired_fplcoun", "value": "YES"},
+              {"name": "serviceDesired_medcons", "value": "NO"},
+              {"name": "productDesired_oc", "value": "NO"},
+              {"name": "productDesired_ec", "value": "NO"},
+              {"name": "productDesired_inj", "value": "NO"},
+              {"name": "productDesired_con", "value": "NO"},
+              {"name": "phoneOwnership", "value": "NO"},
+              {"name": "phoneNumber", "value": "NO"},
+              {"name": "phoneContactConsent", "value": "YESP"},
+              {"name": "phoneContactConsent_feedback", "value": "YESP"},
+              {"name": "healthFacility", "value": "GT_PROV_0019"}
+            ],
+            "coordinate": {"latitude": "", "longitude": ""},
+            "sourceAddedDateTime": "2023-11-28T15:59:55",
+            "voucher": {"id": "0000000000", "type": "Electronic"},
+            "accuracy": 9000,
+            "actionId": "92da88990856d049d20",
+            "program": "GT",
+            "type": "issueReferral"
+          }
+        ]
+      },
+      "dhis2Out": {
+        "versionWS": "v 1.18.25",
+        "response": {"msg": "Success", "returnCode": 200, "orgUnit": {"name": "_GT_BOT (CwS)", "id": "sTZ7KgjZW6B"}},
+        "version": "",
+        "actions": [
+          {
+            "timeOnQueue": "0.00h",
+            "response": {
+              "msg": "-- ipc_issueEntry_msg_creatingClient wtEnroll... -- ipc_issueEntry_msg_cientCreatedWithId 'lpJRvk7BScQ' wtEnroll.-- ipc_issueEntry_msg_creatingEventForTheClient ...-- ipc_issueEntry_msg_clientEventCreateError <webMessage xmlns='http://dhis2.org/schema/dxf/2.0' httpStatus='Conflict' httpStatusCode='409' status='ERROR'><message>An error occurred, please check import summary.</message><response responseType='ImportSummaries'><status>ERROR</status><imported>0</imported><updated>0</updated><deleted>0</deleted><ignored>1</ignored><importOptions><idSchemes/><dryRun>false</dryRun><async>false</async><importStrategy>CREATE_AND_UPDATE</importStrategy><mergeMode>REPLACE</mergeMode><reportMode>FULL</reportMode><skipExistingCheck>false</skipExistingCheck><sharing>false</sharing><skipNotifications>false</skipNotifications><skipAudit>false</skipAudit><datasetAllowsPeriods>false</datasetAllowsPeriods><strictPeriods>false</strictPeriods><strictDataElements>false</strictDataElements><strictCategoryOptionCombos>false</strictCategoryOptionCombos><strictAttributeOptionCombos>false</strictAttributeOptionCombos><strictOrganisationUnits>false</strictOrganisationUnits><requireCategoryOptionCombo>false</requireCategoryOptionCombo><requireAttributeOptionCombo>false</requireAttributeOptionCombo><skipPatternValidation>false</skipPatternValidation><ignoreEmptyCollection>false</ignoreEmptyCollection><force>false</force><firstRowIsHeader>true</firstRowIsHeader><skipLastUpdated>false</skipLastUpdated><mergeDataValues>false</mergeDataValues><skipCache>false</skipCache></importOptions><total>1</total><importSummaryList><importSummary responseType='ImportSummary'><status>ERROR</status><importOptions><idSchemes/><dryRun>false</dryRun><async>false</async><importStrategy>CREATE_AND_UPDATE</importStrategy><mergeMode>REPLACE</mergeMode><reportMode>FULL</reportMode><skipExistingCheck>false</skipExistingCheck><sharing>false</sharing><skipNotifications>false</skipNotifications><skipAudit>false</skipAudit><datasetAllowsPeriods>false</datasetAllowsPeriods><strictPeriods>false</strictPeriods><strictDataElements>false</strictDataElements><strictCategoryOptionCombos>false</strictCategoryOptionCombos><strictAttributeOptionCombos>false</strictAttributeOptionCombos><strictOrganisationUnits>false</strictOrganisationUnits><requireCategoryOptionCombo>false</requireCategoryOptionCombo><requireAttributeOptionCombo>false</requireAttributeOptionCombo><skipPatternValidation>false</skipPatternValidation><ignoreEmptyCollection>false</ignoreEmptyCollection><force>false</force><firstRowIsHeader>true</firstRowIsHeader><skipLastUpdated>false</skipLastUpdated><mergeDataValues>false</mergeDataValues><skipCache>false</skipCache></importOptions><importCount imported='0' updated='0' ignored='1' deleted='0'/><reference>cq46cXr68iW</reference><conflict object='dataElement' value='iKlGj0FYn9m is not a valid data element'/></importSummary></importSummaryList></response></webMessage>",
+              "data": {"clientId": "lpJRvk7BScQ", "CUIC": "AVF111198GUA"}
+            },
+            "actionId": "92da88990856d049d20",
+            "type": "issueReferral",
+            "message": "Issued referral.",
+            "status": "success"
+          }
+        ]
+      }
+    },
+    "response": {"msg": "Client already have an active voucher.", "voucher": "Entry_ms", "logId": "65660e7b5dfe74088cdd073c", "status": "warning"}
+  },
+  {
+    "_id": {"$oid": "65662d805dfe74088cdd094d"},
+    "endpoint": "R_LA.bot",
+    "payload": {
+      "activity": {"dateTime": "2023-11-28T18:12:16", "id": "3ec72e670df890422c0"},
+      "datavalues": [
+        {"name": "program", "value": "FPL-J30"},
+        {"name": "contactSource", "value": "FB-FP-UsalaBien"},
+        {"name": "contactSite", "value": "FB-FP-intern"},
+        {"name": "contactType", "value": "OUTR"},
+        {"name": "healthyBehaviorPromoted_j30", "value": "J-FPL"},
+        {"name": "facebookId", "value": "6203673473066180"},
+        {"name": "fullDetailsAvailable", "value": "YES"},
+        {"name": "firstName", "value": "Alejandra"},
+        {"name": "lastName", "value": "Sanchez"},
+        {"name": "gender", "value": "F"},
+        {"name": "age", "value": 20},
+        {"name": "birthDate", "value": "2003-10-2"},
+        {"name": "motherFirstName", "value": "Ñ"},
+        {"name": "motherLastName", "value": "Ñ"},
+        {"name": "generateVoucher", "value": "YES"},
+        {"name": "serviceDesired_fplcoun", "value": "YES"},
+        {"name": "serviceDesired_medcons", "value": "NO"},
+        {"name": "productDesired_oc", "value": "NO"},
+        {"name": "productDesired_ec", "value": "NO"},
+        {"name": "productDesired_inj", "value": "NO"},
+        {"name": "productDesired_con", "value": "NO"},
+        {"name": "phoneOwnership", "value": "NO"},
+        {"name": "phoneNumber", "value": "NO"},
+        {"name": "phoneContactConsent", "value": "YES"},
+        {"name": "phoneContactConsent_feedback", "value": "YES"},
+        {"name": "healthFacility", "value": "HN_PROV_0005"}
+      ],
+      "location": {"country": "HN", "latitude": "", "accuracy": 9000, "longitude": ""}
+    },
+    "header": {"authorization": "Basic Y2hhdGJvdGNob2NvbGF0ZTpOeGgkS1Y2U3FrNndR", "content-length": "1394", "host": "api.psi-connect.org", "connection": "upgrade", "content-type": "application/json", "accept-encoding": "gzip, deflate", "user-agent": "python-requests/2.22.0", "accept": "*/*"},
+    "time": {"start": "2023-11-28T18:12:16.387Z", "diff": 2294, "end": "2023-11-28T18:12:18.681Z"},
+    "params": {},
+    "processing": {
+      "dhis2In": {
+        "password": "4231",
+        "userName": "HN_BOT",
+        "actions": [
+          {
+            "dataValues": [
+              {"name": "program", "value": "FPL-J30"},
+              {"name": "contactSource", "value": "FB-FP-UsalaBien"},
+              {"name": "contactSite", "value": "FB-FP-intern"},
+              {"name": "contactType", "value": "OUTR"},
+              {"name": "healthyBehaviorPromoted_j30", "value": "J-FPL"},
+              {"name": "facebookId", "value": "6203673473066180"},
+              {"name": "fullDetailsAvailable", "value": "YES"},
+              {"name": "firstName", "value": "Alejandra"},
+              {"name": "lastName", "value": "Sanchez"},
+              {"name": "gender", "value": "F"},
+              {"name": "age", "value": "20"},
+              {"name": "birthDate", "value": "2003-10-2"},
+              {"name": "motherFirstName", "value": "Ñ"},
+              {"name": "motherLastName", "value": "Ñ"},
+              {"name": "generateVoucher", "value": "YES"},
+              {"name": "serviceDesired_fplcoun", "value": "YES"},
+              {"name": "serviceDesired_medcons", "value": "NO"},
+              {"name": "productDesired_oc", "value": "NO"},
+              {"name": "productDesired_ec", "value": "NO"},
+              {"name": "productDesired_inj", "value": "NO"},
+              {"name": "productDesired_con", "value": "NO"},
+              {"name": "phoneOwnership", "value": "NO"},
+              {"name": "phoneNumber", "value": "NO"},
+              {"name": "phoneContactConsent", "value": "YESP"},
+              {"name": "phoneContactConsent_feedback", "value": "YESP"},
+              {"name": "healthFacility", "value": "HN_PROV_0005"}
+            ],
+            "coordinate": {"latitude": "", "longitude": ""},
+            "sourceAddedDateTime": "2023-11-28T18:12:16",
+            "voucher": {"id": "0000000000", "type": "Electronic"},
+            "accuracy": 9000,
+            "actionId": "3ec72e670df890422c0",
+            "program": "HN",
+            "type": "issueReferral"
+          }
+        ]
+      },
+      "dhis2Out": {
+        "versionWS": "v 1.18.25",
+        "response": {"msg": "Success", "returnCode": 200, "orgUnit": {"name": "_HN_BOT (CwS)", "id": "uThHT7wT0fw"}},
+        "version": "",
+        "actions": [
+          {
+            "timeOnQueue": "0.00h",
+            "response": {
+              "msg": "-- ipc_issueEntry_msg_creatingClient wtEnroll... -- ipc_issueEntry_msg_cientCreatedWithId 'L5nXGRLYM8R' wtEnroll.-- ipc_issueEntry_msg_creatingEventForTheClient ...-- ipc_issueEntry_msg_clientEventCreateError <webMessage xmlns='http://dhis2.org/schema/dxf/2.0' httpStatus='Conflict' httpStatusCode='409' status='ERROR'><message>An error occurred, please check import summary.</message><response responseType='ImportSummaries'><status>ERROR</status><imported>0</imported><updated>0</updated><deleted>0</deleted><ignored>1</ignored><importOptions><idSchemes/><dryRun>false</dryRun><async>false</async><importStrategy>CREATE_AND_UPDATE</importStrategy><mergeMode>REPLACE</mergeMode><reportMode>FULL</reportMode><skipExistingCheck>false</skipExistingCheck><sharing>false</sharing><skipNotifications>false</skipNotifications><skipAudit>false</skipAudit><datasetAllowsPeriods>false</datasetAllowsPeriods><strictPeriods>false</strictPeriods><strictDataElements>false</strictDataElements><strictCategoryOptionCombos>false</strictCategoryOptionCombos><strictAttributeOptionCombos>false</strictAttributeOptionCombos><strictOrganisationUnits>false</strictOrganisationUnits><requireCategoryOptionCombo>false</requireCategoryOptionCombo><requireAttributeOptionCombo>false</requireAttributeOptionCombo><skipPatternValidation>false</skipPatternValidation><ignoreEmptyCollection>false</ignoreEmptyCollection><force>false</force><firstRowIsHeader>true</firstRowIsHeader><skipLastUpdated>false</skipLastUpdated><mergeDataValues>false</mergeDataValues><skipCache>false</skipCache></importOptions><total>1</total><importSummaryList><importSummary responseType='ImportSummary'><status>ERROR</status><importOptions><idSchemes/><dryRun>false</dryRun><async>false</async><importStrategy>CREATE_AND_UPDATE</importStrategy><mergeMode>REPLACE</mergeMode><reportMode>FULL</reportMode><skipExistingCheck>false</skipExistingCheck><sharing>false</sharing><skipNotifications>false</skipNotifications><skipAudit>false</skipAudit><datasetAllowsPeriods>false</datasetAllowsPeriods><strictPeriods>false</strictPeriods><strictDataElements>false</strictDataElements><strictCategoryOptionCombos>false</strictCategoryOptionCombos><strictAttributeOptionCombos>false</strictAttributeOptionCombos><strictOrganisationUnits>false</strictOrganisationUnits><requireCategoryOptionCombo>false</requireCategoryOptionCombo><requireAttributeOptionCombo>false</requireAttributeOptionCombo><skipPatternValidation>false</skipPatternValidation><ignoreEmptyCollection>false</ignoreEmptyCollection><force>false</force><firstRowIsHeader>true</firstRowIsHeader><skipLastUpdated>false</skipLastUpdated><mergeDataValues>false</mergeDataValues><skipCache>false</skipCache></importOptions><importCount imported='0' updated='0' ignored='1' deleted='0'/><reference>pPjuYPsJWEZ</reference><conflict object='dataElement' value='iKlGj0FYn9m is not a valid data element'/></importSummary></importSummaryList></response></webMessage>",
+              "data": {"clientId": "L5nXGRLYM8R", "CUIC": "SAF021003ÑÑALE"}
+            },
+            "actionId": "3ec72e670df890422c0",
+            "type": "issueReferral",
+            "message": "Issued referral.",
+            "status": "success"
+          }
+        ]
+      }
+    },
+    "response": {"msg": "Client already have an active voucher.", "voucher": "Entry_ms", "logId": "65662d805dfe74088cdd094d", "status": "warning"}
+  },
+  {
+    "_id": {"$oid": "6566c8a45dfe74088cdd0ff0"},
+    "endpoint": "R_LA.bot",
+    "payload": {
+      "activity": {"dateTime": "2023-11-29T05:14:12", "id": "812fd12b0cda2046010"},
+      "datavalues": [
+        {"name": "program", "value": "FPL-J30"},
+        {"name": "contactSource", "value": "FB-FP-UsalaBien"},
+        {"name": "contactSite", "value": "FB-FP-intern"},
+        {"name": "contactType", "value": "OUTR"},
+        {"name": "healthyBehaviorPromoted_j30", "value": "J-FPL"},
+        {"name": "facebookId", "value": "6189492497731242"},
+        {"name": "fullDetailsAvailable", "value": "YES"},
+        {"name": "lastName", "value": "Ramos"},
+        {"name": "gender", "value": "F"},
+        {"name": "age", "value": 20},
+        {"name": "birthDate", "value": "2002-4-30"},
+        {"name": "citizen", "value": "YES"},
+        {"name": "birthDepartment", "value": "10"},
+        {"name": "birthMunicipality", "value": "01"},
+        {"name": "generateVoucher", "value": "YES"},
+        {"name": "serviceDesired_fplcoun", "value": "YES"},
+        {"name": "serviceDesired_medcons", "value": "NO"},
+        {"name": "productDesired_oc", "value": "NO"},
+        {"name": "productDesired_ec", "value": "NO"},
+        {"name": "productDesired_inj", "value": "NO"},
+        {"name": "productDesired_con", "value": "NO"},
+        {"name": "phoneOwnership", "value": "NO"},
+        {"name": "phoneNumber", "value": "NO"},
+        {"name": "phoneContactConsent", "value": "YES"},
+        {"name": "phoneContactConsent_feedback", "value": "YES"},
+        {"name": "healthFacility", "value": "SV_PROV_0021"}
+      ],
+      "location": {"country": "SV", "latitude": "", "accuracy": 9000, "longitude": ""}
+    },
+    "header": {"authorization": "Basic Y2hhdGJvdGNob2NvbGF0ZTpOeGgkS1Y2U3FrNndR", "content-length": "1379", "host": "api.psi-connect.org", "connection": "upgrade", "content-type": "application/json", "accept-encoding": "gzip, deflate", "user-agent": "python-requests/2.22.0", "accept": "*/*"},
+    "time": {"start": "2023-11-29T05:14:12.330Z", "diff": 2511, "end": "2023-11-29T05:14:14.841Z"},
+    "params": {},
+    "processing": {
+      "dhis2In": {
+        "password": "4231",
+        "userName": "SV_BOT",
+        "actions": [
+          {
+            "dataValues": [
+              {"name": "program", "value": "FPL-J30"},
+              {"name": "contactSource", "value": "FB-FP-UsalaBien"},
+              {"name": "contactSite", "value": "FB-FP-intern"},
+              {"name": "contactType", "value": "OUTR"},
+              {"name": "healthyBehaviorPromoted_j30", "value": "J-FPL"},
+              {"name": "facebookId", "value": "6189492497731242"},
+              {"name": "fullDetailsAvailable", "value": "YES"},
+              {"name": "lastName", "value": "Ramos"},
+              {"name": "gender", "value": "F"},
+              {"name": "age", "value": "20"},
+              {"name": "birthDate", "value": "2002-4-30"},
+              {"name": "citizen", "value": "YES"},
+              {"name": "birthDepartment", "value": "10"},
+              {"name": "birthMunicipality", "value": "01"},
+              {"name": "generateVoucher", "value": "YES"},
+              {"name": "serviceDesired_fplcoun", "value": "YES"},
+              {"name": "serviceDesired_medcons", "value": "NO"},
+              {"name": "productDesired_oc", "value": "NO"},
+              {"name": "productDesired_ec", "value": "NO"},
+              {"name": "productDesired_inj", "value": "NO"},
+              {"name": "productDesired_con", "value": "NO"},
+              {"name": "phoneOwnership", "value": "NO"},
+              {"name": "phoneNumber", "value": "NO"},
+              {"name": "phoneContactConsent", "value": "YESP"},
+              {"name": "phoneContactConsent_feedback", "value": "YESP"},
+              {"name": "healthFacility", "value": "SV_PROV_0021"}
+            ],
+            "coordinate": {"latitude": "", "longitude": ""},
+            "sourceAddedDateTime": "2023-11-29T05:14:12",
+            "voucher": {"id": "0000000000", "type": "Electronic"},
+            "accuracy": 9000,
+            "actionId": "812fd12b0cda2046010",
+            "program": "SV",
+            "type": "issueReferral"
+          }
+        ]
+      },
+      "dhis2Out": {
+        "versionWS": "v 1.18.25",
+        "response": {"msg": "Success", "returnCode": 200, "orgUnit": {"name": "_SV_BOT (CwS)", "id": "jEx34Xi36lI"}},
+        "version": "",
+        "actions": [
+          {
+            "timeOnQueue": "0.00h",
+            "response": {
+              "msg": "-- ipc_issueEntry_msg_creatingClient wtEnroll... -- ipc_issueEntry_msg_cientCreatedWithId 'eVE7IYgMe94' wtEnroll.-- ipc_issueEntry_msg_creatingEventForTheClient ...-- ipc_issueEntry_msg_clientEventCreateError <webMessage xmlns='http://dhis2.org/schema/dxf/2.0' httpStatus='Conflict' httpStatusCode='409' status='ERROR'><message>An error occurred, please check import summary.</message><response responseType='ImportSummaries'><status>ERROR</status><imported>0</imported><updated>0</updated><deleted>0</deleted><ignored>1</ignored><importOptions><idSchemes/><dryRun>false</dryRun><async>false</async><importStrategy>CREATE_AND_UPDATE</importStrategy><mergeMode>REPLACE</mergeMode><reportMode>FULL</reportMode><skipExistingCheck>false</skipExistingCheck><sharing>false</sharing><skipNotifications>false</skipNotifications><skipAudit>false</skipAudit><datasetAllowsPeriods>false</datasetAllowsPeriods><strictPeriods>false</strictPeriods><strictDataElements>false</strictDataElements><strictCategoryOptionCombos>false</strictCategoryOptionCombos><strictAttributeOptionCombos>false</strictAttributeOptionCombos><strictOrganisationUnits>false</strictOrganisationUnits><requireCategoryOptionCombo>false</requireCategoryOptionCombo><requireAttributeOptionCombo>false</requireAttributeOptionCombo><skipPatternValidation>false</skipPatternValidation><ignoreEmptyCollection>false</ignoreEmptyCollection><force>false</force><firstRowIsHeader>true</firstRowIsHeader><skipLastUpdated>false</skipLastUpdated><mergeDataValues>false</mergeDataValues><skipCache>false</skipCache></importOptions><total>1</total><importSummaryList><importSummary responseType='ImportSummary'><status>ERROR</status><importOptions><idSchemes/><dryRun>false</dryRun><async>false</async><importStrategy>CREATE_AND_UPDATE</importStrategy><mergeMode>REPLACE</mergeMode><reportMode>FULL</reportMode><skipExistingCheck>false</skipExistingCheck><sharing>false</sharing><skipNotifications>false</skipNotifications><skipAudit>false</skipAudit><datasetAllowsPeriods>false</datasetAllowsPeriods><strictPeriods>false</strictPeriods><strictDataElements>false</strictDataElements><strictCategoryOptionCombos>false</strictCategoryOptionCombos><strictAttributeOptionCombos>false</strictAttributeOptionCombos><strictOrganisationUnits>false</strictOrganisationUnits><requireCategoryOptionCombo>false</requireCategoryOptionCombo><requireAttributeOptionCombo>false</requireAttributeOptionCombo><skipPatternValidation>false</skipPatternValidation><ignoreEmptyCollection>false</ignoreEmptyCollection><force>false</force><firstRowIsHeader>true</firstRowIsHeader><skipLastUpdated>false</skipLastUpdated><mergeDataValues>false</mergeDataValues><skipCache>false</skipCache></importOptions><importCount imported='0' updated='0' ignored='1' deleted='0'/><reference>wYqWtgCi7f3</reference><conflict object='dataElement' value='iKlGj0FYn9m is not a valid data element'/></importSummary></importSummaryList></response></webMessage>",
+              "data": {"clientId": "eVE7IYgMe94", "CUIC": "RAF3004021001"}
+            },
+            "actionId": "812fd12b0cda2046010",
+            "type": "issueReferral",
+            "message": "Issued referral.",
+            "status": "success"
+          }
+        ]
+      }
+    },
+    "response": {"msg": "Client already have an active voucher.", "voucher": "Entry_ms", "logId": "6566c8a45dfe74088cdd0ff0", "status": "warning"}
+  } 
+]

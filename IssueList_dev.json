@@ -1,0 +1,95 @@
+[
+  {
+    "_id": {"$oid": "65682d3c781ef10684e0f8f9"},
+    "endpoint": "R_LA.bot",
+    "payload": {
+      "activity": {"dateTime": "2023-11-22T06:48:11", "id": "6c5cb7bb075530446b10"},
+      "datavalues": [
+        {"name": "program", "value": "FPL-J30"},
+        {"name": "contactSource", "value": "FB-FP-UsalaBien"},
+        {"name": "contactSite", "value": "FB-FP-intern"},
+        {"name": "contactType", "value": "CONS"},
+        {"name": "healthyBehaviorPromoted_j30", "value": "J-FPL"},
+        {"name": "fullDetailsAvailable", "value": "NO"},
+        {"name": "facebookId", "value": "0000111199996b07"},
+        {"name": "generateVoucher", "value": "NO"},
+        {"name": "phoneOwnership", "value": "NO"},
+        {"name": "phoneNumber", "value": "NO"},
+        {"name": "phoneContactConsent", "value": "YES"},
+        {"name": "phoneContactConsent_feedback", "value": "YES"},
+        {"name": "citizen", "value": "YES"},
+        {"name": "birthDepartment", "value": "32"},
+        {"name": "gender", "value": "F"},
+        {"name": "age", "value": 13}
+      ],
+      "location": {"country": "DO", "latitude": "", "accuracy": 9000, "longitude": ""}
+    },
+    "header": {
+      "authorization": "Basic Y2hhdGJvdGNob2NvbGF0ZTpOeGgkS1Y2U3FrNndR",
+      "content-length": "2223",
+      "postman-token": "567c80e1-6b26-4875-8771-2a564a66e4b2",
+      "host": "api-dev.psi-connect.org",
+      "connection": "upgrade",
+      "content-type": "application/json",
+      "accept-encoding": "gzip, deflate, br",
+      "user-agent": "PostmanRuntime/7.35.0",
+      "accept": "*/*"
+    },
+    "time": {"start": "2023-11-30T06:35:40.879Z", "diff": 3048, "end": "2023-11-30T06:35:43.927Z"},
+    "params": {"action-details": ["3"]},
+    "processing": {
+      "dhis2In": {
+        "password": "4231",
+        "userName": "DO_BOT",
+        "actions": [
+          {
+            "dataValues": [
+              {"name": "program", "value": "FPL-J30"},
+              {"name": "contactSource", "value": "FB-FP-UsalaBien"},
+              {"name": "contactSite", "value": "FB-FP-intern"},
+              {"name": "contactType", "value": "CONS"},
+              {"name": "healthyBehaviorPromoted_j30", "value": "J-FPL"},
+              {"name": "fullDetailsAvailable", "value": "NO"},
+              {"name": "facebookId", "value": "0000111199996b07"},
+              {"name": "generateVoucher", "value": "NO"},
+              {"name": "phoneOwnership", "value": "NO"},
+              {"name": "phoneNumber", "value": "NO"},
+              {"name": "phoneContactConsent", "value": "YESP"},
+              {"name": "phoneContactConsent_feedback", "value": "YESP"},
+              {"name": "citizen", "value": "YES"},
+              {"name": "birthDepartment", "value": "32"},
+              {"name": "gender", "value": "F"},
+              {"name": "age", "value": "13"}
+            ],
+            "coordinate": {"latitude": "", "longitude": ""},
+            "sourceAddedDateTime": "2023-11-22T06:48:11",
+            "voucher": {"id": "0000000000", "type": "NoVoucher"},
+            "accuracy": 9000,
+            "actionId": "6c5cb7bb075530446b08",
+            "program": "DO",
+            "type": "issueReferral"
+          }
+        ]
+      },
+      "dhis2Out": {
+        "versionWS": "v 1.18.25",
+        "response": {"msg": "Success", "returnCode": 200, "orgUnit": {"name": "_DO_BOT (CwS)", "id": "Ohf61P6KovD"}},
+        "version": "",
+        "actions": [
+          {
+            "timeOnQueue": "191.79h",
+            "response": {
+              "msg": " -- Duplicate User Case, clientTeiId: yV1cVT1SZai -- No Active Voucher exists.. -- ipc_issueEntry_msg_creatingEventForTheClient ...-- ipc_issueEntry_msg_clientEventCreatedWithId ''.-- ipc_issueEntry_msg_creatingVoucher wtEnroll ... -- ipc_issueEntry_msg_voucherCreateError wtEnroll 409. ipc_issueEntry_msg_bugDetails: {'httpStatus':'Conflict','httpStatusCode':409,'status':'ERROR','message':'An error occurred, please check import summary.','response':{'responseType':'ImportSummaries','status':'ERROR','imported':0,'updated':0,'deleted':0,'ignored':1,'importOptions':{'idSchemes':{},'dryRun':false,'async':false,'importStrategy':'CREATE_AND_UPDATE','mergeMode':'REPLACE','reportMode':'FULL','skipExistingCheck':false,'sharing':false,'skipNotifications':false,'skipAudit':false,'datasetAllowsPeriods':false,'strictPeriods':false,'strictDataElements':false,'strictCategoryOptionCombos':false,'strictAttributeOptionCombos':false,'strictOrganisationUnits':false,'requireCategoryOptionCombo':false,'requireAttributeOptionCombo':false,'skipPatternValidation':false,'ignoreEmptyCollection':false,'force':false,'firstRowIsHeader':true,'skipLastUpdated':true,'mergeDataValues':false,'skipCache':false},'importSummaries':[{'responseType':'ImportSummary','status':'ERROR','importOptions':{'idSchemes':{},'dryRun':false,'async':false,'importStrategy':'CREATE_AND_UPDATE','mergeMode':'REPLACE','reportMode':'FULL','skipExistingCheck':false,'sharing':false,'skipNotifications':false,'skipAudit':false,'datasetAllowsPeriods':false,'strictPeriods':false,'strictDataElements':false,'strictCategoryOptionCombos':false,'strictAttributeOptionCombos':false,'strictOrganisationUnits':false,'requireCategoryOptionCombo':false,'requireAttributeOptionCombo':false,'skipPatternValidation':false,'ignoreEmptyCollection':false,'force':false,'firstRowIsHeader':true,'skipLastUpdated':true,'mergeDataValues':false,'skipCache':false},'importCount':{'imported':0,'updated':0,'ignored':1,'deleted':0},'conflicts':[{'object':'Attribute.value','value':'Value 'NoVoucher' is not a valid option for attribute SWfQZGMnQ5I and option set MuaSgLulz3S'}],'enrollments':{'responseType':'ImportSummaries','status':'SUCCESS','imported':0,'updated':0,'deleted':0,'ignored':0,'importSummaries':[],'total':0}}],'total':1}} -- FAILED ON voucherCreateProcess()",
+              "data": {"clientId": "yV1cVT1SZai", "CUIC": "XXF01010132-0000111199996b07", "clientEventId": ""}
+            },
+            "actionId": "6c5cb7bb075530446b08",
+            "type": "issueReferral",
+            "message": "Updated Client.",
+            "status": "success"
+          }
+        ]
+      }
+    },
+    "response": {"logId": "65682d3c781ef10684e0f8f9", "status": "success"}
+  }
+]

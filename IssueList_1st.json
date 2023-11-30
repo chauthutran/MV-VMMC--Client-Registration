@@ -1,0 +1,91 @@
+[
+  {
+    "_id": {"$oid": "6564b4745dfe74088cdceda4"},
+    "endpoint": "R_LA.bot",
+    "payload": {
+      "activity": {"dateTime": "2023-11-27T15:23:32", "id": "86dce35f095e00457f0"},
+      "datavalues": [
+        {"name": "program", "value": "FPL-J30"},
+        {"name": "contactSource", "value": "FB-FP-UsalaBien"},
+        {"name": "contactSite", "value": "FB-FP-intern"},
+        {"name": "contactType", "value": "CONS"},
+        {"name": "healthyBehaviorPromoted_j30", "value": "J-FPL"},
+        {"name": "fullDetailsAvailable", "value": "YES"},
+        {"name": "facebookId", "value": "5188710801200711"},
+        {"name": "generateVoucher", "value": "NO"},
+        {"name": "phoneOwnership", "value": "NO"},
+        {"name": "phoneNumber", "value": "NO"},
+        {"name": "phoneContactConsent", "value": "YES"},
+        {"name": "phoneContactConsent_feedback", "value": "YES"},
+        {"name": "citizen", "value": "YES"},
+        {"name": "birthDepartment", "value": "32"},
+        {"name": "gender", "value": "F"},
+        {"name": "age", "value": 18},
+        {"name": "firstName", "value": "Mari luz"},
+        {"name": "lastName", "value": "Rodrigues"},
+        {"name": "birthDate", "value": "2002-1-27"}
+      ],
+      "location": {"country": "DO", "latitude": "", "accuracy": 9000, "longitude": ""}
+    },
+    "header": {"authorization": "Basic Y2hhdGJvdGNob2NvbGF0ZTpOeGgkS1Y2U3FrNndR", "content-length": "1038", "host": "api.psi-connect.org", "connection": "upgrade", "content-type": "application/json", "accept-encoding": "gzip, deflate", "user-agent": "python-requests/2.22.0", "accept": "*/*"},
+    "time": {"start": "2023-11-27T15:23:32.349Z", "diff": 3387, "end": "2023-11-27T15:23:35.736Z"},
+    "params": {},
+    "processing": {
+      "dhis2In": {
+        "password": "4231",
+        "userName": "DO_BOT",
+        "actions": [
+          {
+            "dataValues": [
+              {"name": "program", "value": "FPL-J30"},
+              {"name": "contactSource", "value": "FB-FP-UsalaBien"},
+              {"name": "contactSite", "value": "FB-FP-intern"},
+              {"name": "contactType", "value": "CONS"},
+              {"name": "healthyBehaviorPromoted_j30", "value": "J-FPL"},
+              {"name": "fullDetailsAvailable", "value": "YES"},
+              {"name": "facebookId", "value": "5188710801200711"},
+              {"name": "generateVoucher", "value": "NO"},
+              {"name": "phoneOwnership", "value": "NO"},
+              {"name": "phoneNumber", "value": "NO"},
+              {"name": "phoneContactConsent", "value": "YESP"},
+              {"name": "phoneContactConsent_feedback", "value": "YESP"},
+              {"name": "citizen", "value": "YES"},
+              {"name": "birthDepartment", "value": "32"},
+              {"name": "gender", "value": "F"},
+              {"name": "age", "value": "18"},
+              {"name": "firstName", "value": "Mari luz"},
+              {"name": "lastName", "value": "Rodrigues"},
+              {"name": "birthDate", "value": "2002-1-27"}
+            ],
+            "coordinate": {"latitude": "", "longitude": ""},
+            "sourceAddedDateTime": "2023-11-27T15:23:32",
+            "voucher": {"id": "0000000000", "type": "NoVoucher"},
+            "accuracy": 9000,
+            "actionId": "86dce35f095e00457f0",
+            "program": "DO",
+            "type": "issueReferral"
+          }
+        ]
+      },
+      "dhis2Out": {
+        "versionWS": "v 1.18.25",
+        "response": {"msg": "Success", "returnCode": 200, "orgUnit": {"name": "_DO_BOT (CwS)", "id": "Ohf61P6KovD"}},
+        "version": "",
+        "actions": [
+          {
+            "timeOnQueue": "0.00h",
+            "response": {
+              "msg": " -- Duplicate User Case, clientTeiId: k4y5ggOm2Mp -- Found Active Voucher, voucherId: zLwP0et9k2V, voucherCode: 16677835.. -- ipc_issueEntry_msg_creatingEventForTheClient ...-- ipc_issueEntry_msg_clientEventCreateError <webMessage xmlns='http://dhis2.org/schema/dxf/2.0' httpStatus='Conflict' httpStatusCode='409' status='ERROR'><message>An error occurred, please check import summary.</message><response responseType='ImportSummaries'><status>ERROR</status><imported>0</imported><updated>0</updated><deleted>0</deleted><ignored>1</ignored><importOptions><idSchemes/><dryRun>false</dryRun><async>false</async><importStrategy>CREATE_AND_UPDATE</importStrategy><mergeMode>REPLACE</mergeMode><reportMode>FULL</reportMode><skipExistingCheck>false</skipExistingCheck><sharing>false</sharing><skipNotifications>false</skipNotifications><skipAudit>false</skipAudit><datasetAllowsPeriods>false</datasetAllowsPeriods><strictPeriods>false</strictPeriods><strictDataElements>false</strictDataElements><strictCategoryOptionCombos>false</strictCategoryOptionCombos><strictAttributeOptionCombos>false</strictAttributeOptionCombos><strictOrganisationUnits>false</strictOrganisationUnits><requireCategoryOptionCombo>false</requireCategoryOptionCombo><requireAttributeOptionCombo>false</requireAttributeOptionCombo><skipPatternValidation>false</skipPatternValidation><ignoreEmptyCollection>false</ignoreEmptyCollection><force>false</force><firstRowIsHeader>true</firstRowIsHeader><skipLastUpdated>false</skipLastUpdated><mergeDataValues>false</mergeDataValues><skipCache>false</skipCache></importOptions><total>1</total><importSummaryList><importSummary responseType='ImportSummary'><status>ERROR</status><importOptions><idSchemes/><dryRun>false</dryRun><async>false</async><importStrategy>CREATE_AND_UPDATE</importStrategy><mergeMode>REPLACE</mergeMode><reportMode>FULL</reportMode><skipExistingCheck>false</skipExistingCheck><sharing>false</sharing><skipNotifications>false</skipNotifications><skipAudit>false</skipAudit><datasetAllowsPeriods>false</datasetAllowsPeriods><strictPeriods>false</strictPeriods><strictDataElements>false</strictDataElements><strictCategoryOptionCombos>false</strictCategoryOptionCombos><strictAttributeOptionCombos>false</strictAttributeOptionCombos><strictOrganisationUnits>false</strictOrganisationUnits><requireCategoryOptionCombo>false</requireCategoryOptionCombo><requireAttributeOptionCombo>false</requireAttributeOptionCombo><skipPatternValidation>false</skipPatternValidation><ignoreEmptyCollection>false</ignoreEmptyCollection><force>false</force><firstRowIsHeader>true</firstRowIsHeader><skipLastUpdated>false</skipLastUpdated><mergeDataValues>false</mergeDataValues><skipCache>false</skipCache></importOptions><importCount imported='0' updated='0' ignored='1' deleted='0'/><reference>pyCUMxYp6Nk</reference><conflict object='dataElement' value='iKlGj0FYn9m is not a valid data element'/></importSummary></importSummaryList></response></webMessage>",
+              "data": {"clientId": "k4y5ggOm2Mp", "CUIC": "MRF27010232", "voucherId": "zLwP0et9k2V", "voucherCode": "16677835"}
+            },
+            "actionId": "86dce35f095e00457f0",
+            "type": "issueReferral",
+            "message": "Updated Client.",
+            "status": "success"
+          }
+        ]
+      }
+    },
+    "response": {"logId": "6564b4745dfe74088cdceda4", "status": "success"}
+  }
+]
